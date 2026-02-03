@@ -1,0 +1,15 @@
+include: package:dart_frog_lint/recommended.yaml
+analyzer:
+  exclude: 
+
+linter:
+  rules:
+    file_names: false #file이름 snake 규칙 제거
+    avoid_print: false # print대신 logger 사용하기
+    public_member_api_docs: false # public으로 선언된 모든 클래스, 함수, 변수에 /// 문서 주석을 달아야 한다.
+    always_use_package_imports: false #  절대 경로로 import 하도록 하는 규칙 제거하여 상대 경로로 import 가능하게 하기
+    omit_local_variable_types: false # 타입 추론이 되면 타입을 쓰지 마라의 규칙을 제거하여 명시적으로 타입을 작성하게 하기
+    avoid_redundant_argument_values: false # 기본값이 있는 파라미터에 똑같은 값을 굳이 넣지 마라는 규칙 제거
+    one_member_abstracts: false # 메서드가 하나 뿐인 추상 클래스를 만들지 말고, 그냥 함수 타입을 사용하라 규칙 제거
+    cascade_invocations: false # 연속된 규칙은 .. 연산자를 사용하라의 규칙 제거
+    always_put_required_named_parameters_first: false # 생성자에서 required 붙은 파라이터를 맨 앞에 둬라는 규칙 제거
