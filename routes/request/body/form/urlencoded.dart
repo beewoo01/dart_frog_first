@@ -14,8 +14,8 @@ Future<Response> onRequest(RequestContext context) async {
           'formData.fields': formData.fields,
           'formData.fields type': '${formData.fields.runtimeType}',
           'formData.files': formData.files,
-          'formData.files type': '${formData.fields.runtimeType}'
-        }
+          'formData.files type': '${formData.fields.runtimeType}',
+        },
       );
     case _:
       return Response(statusCode: HttpStatus.methodNotAllowed);
