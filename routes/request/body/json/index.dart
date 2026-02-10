@@ -11,8 +11,8 @@ Future<Response> onRequest(RequestContext context) async {
       return Response.json(
         body: {
           'bodyType': '${body.runtimeType}',
-          'content': body
-        }
+          'content': body,
+        },
       );
       case _:
       return Response(statusCode: HttpStatus.methodNotAllowed);

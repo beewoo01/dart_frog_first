@@ -6,11 +6,10 @@ Future<Response> onRequest(RequestContext context) async {
   final method = context.request.method;
 
   switch (method) {
-
     case HttpMethod.post:
       final body = await context.request.body();
       return Response(body: 'bodyType: ${body.runtimeType}, content: $body');
-    case _ :
+    case _:
       return Response(statusCode: HttpStatus.methodNotAllowed);
   }
 }
